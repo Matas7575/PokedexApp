@@ -15,7 +15,7 @@
     "react-scripts": "^5.0.1",
     "sort-by": "^0.0.2",
     "web-vitals": "^2.1.4",
-    "homepage": "https://github.com/Matas7575/my-pokedex-app"
+    "homepage": "https://github.com/Matas7575/PokedexApp"
   },
   "scripts": {
     "start": "react-scripts start",
