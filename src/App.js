@@ -1,17 +1,21 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { Link, Outlet } from "react-router-dom"
 import Pokedex from './Pokedex';
 import PokemonDetails from './PokemonDetails';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Pokedex />} />
-        <Route path="/pokemon/:name" element={<PokemonDetails />} />
-      </Routes>
-    </Router>
-  );
-}
 
-export default App;
+
+
+
+export default function App() {
+  return (
+      <>
+          <nav>
+              <Link to="#/" element={<Pokedex />}></Link>
+              <Link to="#/pokemon/:name" element={<PokemonDetails />}>About</Link>
+          </nav>
+          <Outlet />
+      </>
+  )
+}

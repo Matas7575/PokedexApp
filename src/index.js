@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Pokedex from './Pokedex';
+import PokemonDetails from './PokemonDetails';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createHashRouter } from "react-router-dom"
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Pokedex />,
+    
+  },
+  {
+    path: "/pokemon/:name",
+    element: <PokemonDetails />,
+  }
+])
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
