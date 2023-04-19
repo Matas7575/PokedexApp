@@ -12,8 +12,8 @@ export default function App() {
   return (
       <>
           <nav>
-              <Link to="#/" element={<Pokedex />}></Link>
-              <Link to="#/pokemon/:name" element={<PokemonDetails />}>About</Link>
+              <Link to="/" element={<Pokedex />}></Link>
+              <Link to="/pokemon/:name" element={<PokemonDetails />}>About</Link>
           </nav>
           <Outlet />
       </>
