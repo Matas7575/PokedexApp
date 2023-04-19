@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.5",
     "gh-pages": "^5.0.0",
-    "homepage": "https://matas7575.github.io/PokedexApp/",
+    "homepage": "https://matas7575.github.io/PokedexApp",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
